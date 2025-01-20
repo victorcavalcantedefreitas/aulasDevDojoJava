@@ -8,9 +8,8 @@ public class ifaula {
         //
         if(isAutorizadoComprarBebida) {
             System.out.println("Autorizado a beber bebida alcolica");
-        }
-        if(!isAutorizadoComprarBebida) {
-            System.out.println("Nao autorizado a comprar bebida alcolica");
+        }else{
+            System.out.println("java");
         }
     }
 }
