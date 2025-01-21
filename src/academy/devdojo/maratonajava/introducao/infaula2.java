@@ -5,7 +5,7 @@ public class infaula2 {
         //doar se salario > 5000
         double salario = 3000;
         // resultado = (condicao) ? verdadeiro : falso
-        String resultado = (salario > 5000) ? "Doar" : "mensagemNaoDoar";
+        String resultado = (salario > 5000) ? "Pode pagar" : "pagado";
         System.out.println(resultado);
     }
 }
