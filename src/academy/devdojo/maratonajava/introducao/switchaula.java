@@ -6,7 +6,10 @@ public class switchaula {
         byte dia = 1;
         // char, int, byte, short, enum, String
 
-        switch (dia){
+        switch (dia) {
+            default:
+                System.out.println("Opção invalida");
+                break;
             case 1:
                 System.out.println("Domingo");
                 break;
@@ -28,6 +31,22 @@ public class switchaula {
             case 7:
                 System.out.println("Sabado");
                 break;
+        }
+
+
+
+        String sexo = "M";
+        switch (sexo) {
+            case "M":
+                System.out.println("Macho");
+                break;
+            case "F":
+                System.out.println("Femea");
+                break;
+            default:
+                System.out.println("Invalido");
+                break;
+
         }
     }
 }
