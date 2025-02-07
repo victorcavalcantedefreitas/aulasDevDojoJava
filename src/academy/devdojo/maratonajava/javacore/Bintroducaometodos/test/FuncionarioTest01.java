@@ -14,6 +14,6 @@ public class FuncionarioTest01 {
         funcionario.idade = 17;
         impressoraFuncionario.imprime(funcionario);
         double media = mediaeImprime.mediaeImprime(funcionario.salario);
-        System.out.println("media: "+media);
+//System.out.println("media: "+media);
     }
 }
