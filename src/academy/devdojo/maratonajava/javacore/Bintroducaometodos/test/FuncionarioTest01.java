@@ -9,9 +9,9 @@ public class FuncionarioTest01 {
         Funcionario funcionario = new Funcionario();
         ImpressoraFuncionario impressoraFuncionario = new ImpressoraFuncionario();
         MediaeImprime mediaeImprime = new MediaeImprime(); 
-        funcionario.salario = new double[]{1230.0d,2003.0d, 3202.0d};
+        funcionario.salario = new double[]{1230.0d,2003.0d, 3202.0d,2031.1,2121.2d};
         funcionario.nome = "Victor";
-        funcionario.idade = 17;
+        funcionario.idade = 15;
         impressoraFuncionario.imprime(funcionario);
         double media = mediaeImprime.mediaeImprime(funcionario.salario);
 //System.out.println("media: "+media);
