@@ -1,5 +1,8 @@
 package Desafio;
 
+import java.util.Objects;
+import java.util.Scanner;
+
 public class classSomas {
     private double num1;
     private double num2;
@@ -22,6 +25,16 @@ public class classSomas {
             }
             case "*" -> {
                 return num1 * num2;
+            }
+            case "%" -> {
+                Scanner sc1 = new Scanner(System.in);
+                System.out.println("Quer retirar uma porcentagem de um numero ou adicionar?");
+                String dec = sc1.next();
+
+                if (Objects.equals(dec, "-")){
+                    return num1 - (num1 / (num2 * 100));
+                }
+                return 0;
             }
             case null, default -> {
                 System.out.println("Tenta novamente");
