@@ -52,23 +52,23 @@ public class domain {
         } else if (Objects.equals(dec, "%")) {
             System.out.println("quer adicionar ou subtrair da porcentagem? + - ");
 
+            dec2 = scanner2.next();
             String[] valPerm = {"+", "-"};
 
             boolean valorBol = false;
 
-            for (String valor : valPerm){
-                if (valor.equals(valPerm)){
+            for (String s : valPerm) {
+                if (s.equals("-")) {
                     valorBol = true;
                     break;
                 }
             }
 
             if(valorBol){
-                dec2 = scanner2.next();
                 if (Objects.equals(dec2, "-")){
-                    return num1 - (num1 * 100 / num2);
+                    return num1 - (num1 * num2 / 100);
                 } else {
-                    return num1 + (num1 * 100 / num2);
+                    return num1 + (num1 * num2 / 100);
                 }
             }
 
@@ -76,30 +76,6 @@ public class domain {
         }else{
             return 194;
         }
-        return 210;
-    }
-
-    public double getNum1() {
-        return num1;
-    }
-
-    public void setNum1(double num1) {
-        this.num1 = num1;
-    }
-
-    public double getNum2() {
-        return num2;
-    }
-
-    public void setNum2(double num2) {
-        this.num2 = num2;
-    }
-
-    public String getDec() {
-        return dec;
-    }
-
-    public void setDec(String dec) {
-        this.dec = dec;
+        return 121;
     }
 }
